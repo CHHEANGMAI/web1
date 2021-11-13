@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ccc;
+}
+.wrapper{
+    background-color: #fff;
+    padding: 0;
+    margin: 0% auto;
+    box-sizing: content-box;
+    box-shadow: 2px 2px 4px #fff;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    height: 35px;
+}
+.navbar .nav-link{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+   
+}
+.navbar .nav-link:hover {
+    color: #999;
+    border-bottom: solid 4px rgb(231, 31, 31);
+}
+.banner {
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+.main{
+    display: flex;
+}
+.left{
+    flex: 1;
+}
+.left header,.left ul{
+   margin-left: 10px;
+}
+.left ul {
+    list-style-type: none;
+}
+.left li{
+    margin: 4px 0;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 8px;
+    font-size:16px;
+}
+.left li::before {
+  border-left: 4px solid green;
+  content: '';
+  margin-right: 2px;
+}
+.left a{
+    text-decoration: none;
+}
+.content {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom: 15px;
+}
+.image-a{
+    float: left;
+    margin-right: 10px;
+    border-bottom: 3px solid red;
+}
+.article{
+    clear: both;
+}
+.article:first-child {
+    margin-top: 8px;
+}
+.article h3 {
+    margin-bottom: 8px;
+    padding: 8px 0 8px 10px;
+    background-color: aqua;
+    color: black;    
+}
